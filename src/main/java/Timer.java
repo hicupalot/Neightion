@@ -88,12 +88,12 @@ public class Timer implements CommandExecutor, TabCompleter {
                 for (Player player : Bukkit.getOnlinePlayers()) {
                     if (H != 0) {
                         Component whenHoursLeft = Component.text().append(Component.text("Time Remaining: ").append(Component.text(H).
-                                append(Component.text(" Hours").append(Component.text(M).append(Component.text(" Minutes"))
+                                append(Component.text(" Hours ").append(Component.text(M).append(Component.text(" Minutes "))
                                         .append(Component.text(S)).append(Component.text(" Seconds")))))).build();
                         player.sendActionBar(whenHoursLeft);
                     } else if (M != 0) {
                         Component whenMinutesLeft = Component.text().append(Component.text("Time Remaining: ").
-                                append(Component.text(M).append(Component.text(" Minutes"))
+                                append(Component.text(M).append(Component.text(" Minutes "))
                                         .append(Component.text(S)).append(Component.text(" Seconds")))).build();
                         player.sendActionBar(whenMinutesLeft);
                     } else if (time >= 1) {
