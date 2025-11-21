@@ -1,0 +1,36 @@
+name: Neightion
+version: 1
+main: Neightion
+api-version: 1.21
+author: hicupalot
+depend: [LuckPerms]
+
+commands:
+  ToggleStaffChat:
+    description: Toggles staff chat
+    permission: neightion.mod
+    aliases: [staffchat, sc]
+  clearchat:
+    description: Clears the chat
+    permission: neightion.mod
+    aliases: [chatclear, cc]
+  mutechat:
+    description: Mutes the Chat
+    permission: neightion.mod
+    aliases: [chatmute, mc, silence]
+  Timer:
+    description: Starts a timer
+    permission: neightion.mod
+    aliases: [starttimer, timerstart]
+  StopTimer:
+    description: Stops the running timer
+    permission: neightion.mod
+    aliases: [timerstop, stopcurrenttimer, canceltimer, timercancel]
+  coinflip:
+    description: Flips a coin
+    permission: neightion.mod
+    aliases: [headsortails, flipcoin]
+permissions:
+  neightion.mod:
+    description: 'Mod Perms'
+    default: op
