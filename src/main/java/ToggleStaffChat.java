@@ -11,7 +11,7 @@ import java.util.UUID;
 
 public class ToggleStaffChat implements CommandExecutor {
     public static final Component staffAdd = Component.text().append(Component.text("[").color(TextColor.color(254, 254, 63 )).
-            append(Component.text("STAFFCHAT").color(TextColor.color(225, 87,75)).append(Component.text("]").color(TextColor.color(254,254,63)).append(
+            append(Component.text("STAFF").color(TextColor.color(225, 87,75)).append(Component.text("]").color(TextColor.color(254,254,63)).append(
                     Component.text(" ENABLED").color(TextColor.color(225,87,75)))))).build();
     Component noPermission = Component.text("[Neightion] You do not have permission").color(TextColor.color(225,87,75));
     Component notPlayer = Component.text("[Neightion] You must be a player to do this").color(TextColor.color(225,87,75));
