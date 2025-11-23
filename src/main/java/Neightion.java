@@ -18,6 +18,7 @@ public final class Neightion extends JavaPlugin {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new StaffChat(),this);
         getServer().getPluginManager().registerEvents(new ChatMuted(),this);
+        getServer().getPluginManager().registerEvents(new NeightonMobGriefing(), this);
         getCommand("ToggleStaffChat").setExecutor(new ToggleStaffChat());
         getCommand("clearchat").setExecutor(new clearchat());
         getCommand("mutechat").setExecutor(new mutechat());
