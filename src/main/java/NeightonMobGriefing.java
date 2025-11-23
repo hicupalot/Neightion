@@ -14,8 +14,8 @@ public class NeightonMobGriefing implements Listener {
     DamageSource creeper = DamageSource.builder(DamageType.EXPLOSION).build();
     @EventHandler
     public void onCreeperExplode(EntityExplodeEvent e) {
-        e.setCancelled(true);
         if (e.getEntityType() == EntityType.CREEPER) {
+            e.setCancelled(true);
             Collection<LivingEntity> entityList = e.getLocation().getNearbyLivingEntities(3);
             if (entityList.isEmpty()) {
                 return;
