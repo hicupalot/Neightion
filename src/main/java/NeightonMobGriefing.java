@@ -16,7 +16,8 @@ public class NeightonMobGriefing implements Listener {
     public void onCreeperExplode(EntityExplodeEvent e) {
         if (e.getEntityType() == EntityType.CREEPER) {
             e.setCancelled(true);
-            Collection<LivingEntity> entityList = e.getLocation().getNearbyLivingEntities(3);
+            Collection<LivingEntity> entityList = e.getLocation().getNearbyLivingEntities(4);
+
             if (entityList.isEmpty()) {
                 return;
             }
@@ -38,11 +39,13 @@ public class NeightonMobGriefing implements Listener {
             }
         }
     }
+    @EventHandler
     public void onEntityFire(EntityCombustByEntityEvent e){
         if (e.getCombuster().getType() != EntityType.PLAYER){
             e.setCancelled(true);
         }
     }
+    @EventHandler
     public void onEnderMan(EntityChangeBlockEvent e){
         if (e.getEntity().getType() == EntityType.ENDERMAN){
             e.setCancelled(true);
