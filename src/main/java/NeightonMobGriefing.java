@@ -51,4 +51,10 @@ public class NeightonMobGriefing implements Listener {
             e.setCancelled(true);
         }
     }
+    @EventHandler
+    public void wither (EntityChangeBlockEvent e){
+        if (e.getEntity().getType() == EntityType.WITHER){
+            e.setCancelled(true);
+        }
+    }
 }

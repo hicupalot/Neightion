@@ -18,7 +18,7 @@ public class StaffChat implements Listener {
         if (Neightion.staffToggle.containsKey(playerUUID)) {
             String colorMessage = ChatColor.translateAlternateColorCodes('&', chatMessage);
             String name = ChatColor.translateAlternateColorCodes('&', "&6"+e.getPlayer().getDisplayName());
-            String StaffChatMessages = ChatColor.translateAlternateColorCodes('&',"&e[&cSTAFF&e] " + name + ": " + ChatColor.GREEN + colorMessage);
+            String StaffChatMessages = ChatColor.translateAlternateColorCodes('&',"&e[&cSTAFFCHAT&e] " + name + ": " + ChatColor.GREEN + colorMessage);
             for (Player staff : Bukkit.getOnlinePlayers()) {
                 if (staff.hasPermission("neightion.mod")) {
                     staff.sendMessage(StaffChatMessages);
